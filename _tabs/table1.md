@@ -1,5 +1,5 @@
 ---
-title: મારા ટેબલનો ડેમો
+title: table demo
 icon: fas fa-info-circle
 order: 5
 script: true
