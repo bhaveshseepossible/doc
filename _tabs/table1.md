@@ -1,5 +1,5 @@
 ---
-# the default layout is 'page'
+title: મારા ટેબલનો ડેમો
 icon: fas fa-info-circle
 order: 5
 script: true
@@ -7,6 +7,7 @@ script: true
 
 <div id="table" style="margin: 20px 0;"></div>
 
+<!-- લાઈબ્રેરીઓ -->
 <link href="https://unpkg.com/tabulator-tables@6.3.0/dist/css/tabulator.min.css" rel="stylesheet">
 <script src="https://unpkg.com/tabulator-tables@6.3.0/dist/js/tabulator.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/papaparse@5.5.3/papaparse.min.js"></script>
@@ -21,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
     complete: function(res) {
       if (res.data && res.data.length > 0) {
         
-        const columns = Object.keys(res.data[0]).map(key => {
+        const columns = Object.keys(res.data[0]).map(function(key) {
           
           let colConfig = {
             title: key,
@@ -35,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function() {
             
             colConfig.formatterParams = {
               height: "50px", 
-              width: "50px", 
+              width: "50px"
             };
           }
 
