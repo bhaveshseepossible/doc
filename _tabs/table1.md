@@ -5,7 +5,7 @@ order: 5
 script: true
 ---
 
-
+<!-- ૧. ટેબલ માટેનું કન્ટેનર -->
 <div id="table" style="margin: 20px 0;"></div>
 
 <!-- ૨. જરૂરી CSS અને JS લાઈબ્રેરીઓ (HTML ફોર્મેટમાં) -->
